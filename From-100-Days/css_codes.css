@@ -1,0 +1,19 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(68, 66, 66);
+  }
+  p {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(68, 66, 66);
+  }
+
+  a {
+    color: rgb(224, 10, 39);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
