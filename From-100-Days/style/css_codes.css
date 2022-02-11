@@ -1,0 +1,15 @@
+  body {
+      margin: 50px;
+  }
+
+  #first-line {
+      color: rgb(204, 12, 12);
+      font-weight: bold;
+      font-size: 50px;
+  }
+
+  img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+  }

@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    background-color: rgb(204, 203, 166);
+}
+h1 {
+    color: rgb(207, 26, 26);
+    font-family: 'Raleway','serif';
+}
+p {
+    color: rgb(21, 119, 204);
+    font-family: 'Redressed','serif';
+    font-size: 50px;
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+a:hover {
+    text-decoration: underline;
+}
