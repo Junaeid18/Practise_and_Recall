@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(188, 183, 221);
+    font-family: 'Ubuntu','serif';
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 40px auto 28px auto;
+    color: rgb(92, 76, 199);
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+main{
+    margin: 50px auto;
+    background-color: rgb(92, 76, 199);
+    height: 800px;
+    width: 600px;
+    border-radius: 2%;
+    color: aliceblue;
+    padding: 25px;
+}
