@@ -2,7 +2,7 @@ body {
     background-color: rgb(188, 183, 221);
     font-family: 'Ubuntu','serif';
 }
-
+ 
 header {
     text-align: center;
 }
@@ -20,9 +20,26 @@ img {
 main{
     margin: 50px auto;
     background-color: rgb(92, 76, 199);
-    height: 800px;
     width: 600px;
     border-radius: 2%;
     color: aliceblue;
     padding: 25px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0,0.2);
+}
+
+footer {
+    width: 200px;
+    margin: 5px auto;
+    text-align: center;
+}
+#download {
+    background-color: rgb(231, 172, 7);
+    padding: 5px 10px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0,0.2);
+}
+
+#copyright {
+    color: rgb(99, 99, 99);
 }
