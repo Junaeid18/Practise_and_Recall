@@ -27,6 +27,20 @@ main{
     box-shadow: 5px 5px 10px rgb(0, 0, 0,0.2);
 }
 
+ul {
+    list-style: square;
+}
+
+.yellow {
+    color: rgb(245, 216, 88);
+}
+
+span {
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+}
+
 footer {
     width: 200px;
     margin: 5px auto;
