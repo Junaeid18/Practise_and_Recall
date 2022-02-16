@@ -27,18 +27,35 @@ main{
     box-shadow: 5px 5px 10px rgb(0, 0, 0,0.2);
 }
 
+span {
+    font-weight: bold;
+}
 ul {
-    list-style: square;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 5px 0;
+    padding-left: 15px;
+    border-left: 3px solid transparent;
 }
 
 .yellow {
+    border-left: 3px solid rgb(245, 216, 88);
     color: rgb(245, 216, 88);
 }
 
-span {
+p a {
     background-color: antiquewhite;
     color: black;
     font-weight: bold;
+    padding: 0;
+    text-decoration: none;
+}
+p a:hover,p a:active {
+    background-color: rgb(255, 254, 253);
 }
 
 footer {
