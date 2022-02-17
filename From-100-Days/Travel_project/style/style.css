@@ -1,0 +1,6 @@
+#back-image {
+    height: 800px;
+    background-image: url("/image/ocean.jpg");
+    background-position: center;
+    background-size: cover;
+}
