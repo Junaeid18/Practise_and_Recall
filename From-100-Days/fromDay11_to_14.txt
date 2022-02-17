@@ -1,0 +1,27 @@
+I have revised some feature of git in those days.
+
+Such as : 
+
+    --git checkout -n new [opening a branch named as 'new']
+    
+
+    --git checkout -m holo [to rename the current brach name to 'holo']
+
+
+    --git checkout branch_name [to go another named as branch_name]
+
+
+    --git merge new [from merging a the current brach with the branch 'new']
+
+
+    --git reset --hard HEAD~1 [To set the previous state or commit as the current one or to revert the previous stage]
+                                [~number means --> going to that commit stage]
+
+
+    --git branch -D new [deleting a branch 'new']
+
+
+    --git reset . [To undo the staged stage]
+
+    
+    --To collaborate a open-source project we fork them and to notufy the owner with the change we use pull request.
