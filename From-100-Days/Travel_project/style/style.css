@@ -51,7 +51,7 @@
 }
 
 #highlights {
-    position: absolute;
+    padding: 20px;
     width: 100%;
     box-sizing: border-box;
     background-color: aquamarine;
@@ -60,7 +60,8 @@
 #highlights h1 {
     text-align: center;
     text-transform: uppercase;
-    color: black;
+    color: rgb(59, 65, 64);
+    margin: 30px 0;
 }
 
 #destinations {
@@ -70,7 +71,26 @@
     margin-bottom: 30px;
 }
 
+.place {
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.place p {
+    font-size: 20px;
+    color: rgb(124, 124,123);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.place strong {
+    color: rgb(0, 160, 117);
+}
+
 .place img {
     height: 200px;
-    width: 100%;    
+    width: 100%;
+    box-shadow: 2px 4px 8px rgb(68,67, 67);
+    border-radius: 10px;
+    object-fit: cover;    
 }
