@@ -47,4 +47,30 @@
 
 #back-image-content a:hover {
     background-color: rgb(211, 211, 0);
+    padding: 50px;
+}
+
+#highlights {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+#highlights h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+#destinations {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.place img {
+    height: 200px;
+    width: 100%;    
 }
