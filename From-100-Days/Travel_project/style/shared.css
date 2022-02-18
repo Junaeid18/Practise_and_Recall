@@ -54,3 +54,22 @@ header a:hover {
     color: rgb(77,77,77);
     background-color: rgb(255,251,0);
 }
+
+footer {
+    background: linear-gradient(180deg, rgb(77, 74, 74), rgb(0,0,0));
+}
+
+footer img {
+    height: 5vw;
+    width: 5vw;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer li {
+    margin: 0 50px;
+}
