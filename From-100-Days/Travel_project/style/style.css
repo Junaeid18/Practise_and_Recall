@@ -54,7 +54,8 @@
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background: linear-gradient(0deg, rgb(227,225,253), rgb(162, 238, 232));
 }
 
 #highlights h1 {
