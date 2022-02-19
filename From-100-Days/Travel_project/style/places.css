@@ -10,6 +10,9 @@ header {
 main ul {
     width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 main li {
