@@ -1,12 +1,57 @@
 body {
     background: linear-gradient(40deg, rgb(77,77,77), rgb(58,58,58));
+    color: rgb(68,68,68);
 }
 
 header {
     position: static;
 }
 
+main ul {
+    width: 800px;
+    margin: 0 auto;
+}
+
+main li {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
 main li img {
     width: 300px;
-    height: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.item-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .actions {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 30px;
+    margin: 0;
+} */
+
+.actions {
+    text-align: right;
+}
+
+.actions a {
+    padding: 6px;
+    text-decoration: none;
+    color: cyan;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.actions a:hover {
+    background-color: rgb(204, 247, 252);
 }
