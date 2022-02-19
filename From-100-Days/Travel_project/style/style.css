@@ -64,6 +64,10 @@
     margin: 30px 0;
 }
 
+#highlights a {
+    text-decoration: none;
+}
+
 #destinations {
     display: flex;
     width: 90%;
