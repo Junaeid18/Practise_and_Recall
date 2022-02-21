@@ -57,7 +57,7 @@ header nav a:hover {
 
 main {
     /* background-color: rgb(49, 46, 46); */
-    color: orange;
+    color: rgb(255, 166, 0);
 }
 
 main h1 {
@@ -65,15 +65,16 @@ main h1 {
     text-align: center;
     font-family: "Lato",sans-serif;
     font-size: 40px;
-    padding: 30px 0;
+    padding: 30px;
 }
 
 #carts {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
 
 #carts ul{
+    margin: 20px o;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -81,12 +82,18 @@ main h1 {
     justify-content: center;
 }
 
-#carts li {
+/* #carts li {
     padding: 10px;
     margin: 0;
+} */
+
+.food-items {
+    background-color: rgb(228,206,182);
+    border-radius: 6px;
+    overflow: hidden;
 }
 
-#carts img {
+.food-items img {
     margin: 0;
     padding: 0;
     height: 25vw;
@@ -94,19 +101,19 @@ main h1 {
     object-fit: cover;
 }
 
-.food-items{
+.food-items {
     background-color: pink;
     text-align: center;
     padding: 30px auto 10px auto;
 }
 
-.food-items h2{
+.food-items-content h2{
     margin: 0;
     color: black;
     /* font-family: "Lato",sans-serif; */
     text-align: center;
 }
-.food-items a{
+.btn {
     display: inline-block;
     margin: 5px auto;
     padding: 10px;
@@ -118,6 +125,6 @@ main h1 {
     border-radius: 5px;
 }
 
-.food-items a:hover {
-
+.btn:hover {
+    background-color: rgb(221,134,34);
 }
