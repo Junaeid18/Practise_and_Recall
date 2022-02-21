@@ -48,3 +48,57 @@ main h1 {
     font-size: 40px;
     padding: 30px 0;
 }
+
+#carts {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#carts ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+    justify-content: center;
+}
+
+#carts li {
+    padding: 10px;
+    margin: 0;
+}
+
+#carts img {
+    margin: 0;
+    padding: 0;
+    height: 25vw;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name-buy{
+    background-color: pink;
+    text-align: center;
+    padding: 30px auto 10px auto;
+}
+
+.name-buy h2{
+    margin: 0;
+    color: black;
+    font-family: "Lato",sans-serif;
+    text-align: center;
+}
+.name-buy a{
+    display: inline-block;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Lato",sans-serif;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+}
+
+.name-buy a:hover {
+
+}
