@@ -70,11 +70,11 @@ main h1 {
 
 #carts {
   width: 80%;
-  margin: 2rem auto;
+  margin: 0 auto 2rem auto;
 }
 
 #carts ul {
-  margin: 20px o;
+  margin: 20px 0;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -128,8 +128,18 @@ main h1 {
   background-color: rgb(221, 134, 34);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  nav {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
   #carts ul {
     grid-template-columns: 100%;
+    padding: 0;
+    gap: 1.5rem 0;
   }
 }
