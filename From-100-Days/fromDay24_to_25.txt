@@ -29,3 +29,36 @@
 				to nested child inside the root element.
 
 	3. *  --> CSS rules are applied to all elements.
+
+
+
+
+	CSS transformation :
+		
+		move/change appearance of element, e.g. when hovering
+
+	CSS transition:
+
+		smooth transition from initial to transformed state.Applied to 
+		initial content not on the transformed element.
+
+	CSS property :
+	e.g. :
+	
+	 -----------css transform-------------
+	content:hover {
+		transform: scale(2); //double the size of the content
+	}
+
+	----------css transition---------
+	transition: transform 0.5s ease-out  1s;
+		       |	|     |      |
+		   property duration timing  delay
+				     funtion
+	e.g. :
+
+	content {
+		transition: transfrom 0.5 ease-out; //transition property should be added as the transform property
+	}
+
+
