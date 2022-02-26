@@ -127,3 +127,9 @@ main h1 {
 .btn:hover {
   background-color: rgb(221, 134, 34);
 }
+
+@media (max-width: 768px) {
+  #carts ul {
+    grid-template-columns: 100%;
+  }
+}
