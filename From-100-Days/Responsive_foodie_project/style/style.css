@@ -69,6 +69,31 @@ header nav a:hover {
   background-color: rgb(255, 166, 0);
 }
 
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(49, 46, 46);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 5rem;
+  text-align: center;
+}
+
+#side-drawer li {
+  margin: 2rem 0;
+}
+
+#side-drawer a {
+  font-size: 1.5rem;
+  color: rgb(255, 166, 0);
+}
+
 main {
   /* background-color: rgb(49, 46, 46); */
   color: rgb(255, 166, 0);
@@ -143,7 +168,7 @@ main h1 {
 }
 
 @media (max-width: 48rem) {
-  nav {
+  header nav {
     display: none;
   }
 
