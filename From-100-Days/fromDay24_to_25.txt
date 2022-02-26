@@ -17,3 +17,15 @@
 	--color-gray-200: rgb(236,236,236)
 
 	background-color: var(--color-gray-200)
+
+
+	Selector : 
+	
+	1. html --> css rules are applied to all the element & inherited child of
+			html element.
+
+ 	2. :root
+	   (pseud0-selector) --> CSS rules are applied to root element & inherited
+				to nested child inside the root element.
+
+	3. *  --> CSS rules are applied to all elements.
