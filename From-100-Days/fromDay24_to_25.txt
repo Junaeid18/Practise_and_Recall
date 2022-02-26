@@ -58,7 +58,11 @@
 	e.g. :
 
 	content {
-		transition: transfrom 0.5 ease-out; //transition property should be added as the transform property
+		transition: transfrom 0.5 ease-out; //transition property should be added as the transform property.
 	}
+
+
+	svg : scaleable vector graphics
+		for icon we can use this xml images.
 
 
