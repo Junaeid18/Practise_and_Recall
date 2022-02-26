@@ -1,0 +1,19 @@
+
+	knowledge about sizing and spacing.
+	
+	choosing the right font.
+
+	choosing the color.
+
+	CSS variable : 
+	
+	html {
+	
+	(Example:
+	--var: rgb(1,1,1)
+
+	--var-name-number --> )
+	
+	--color-gray-200: rgb(236,236,236)
+
+	background-color: var(--color-gray-200)
