@@ -55,6 +55,20 @@ header nav a:hover {
     background-color: white; */
 }
 
+.menu-btn {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 166, 0);
+}
+
 main {
   /* background-color: rgb(49, 46, 46); */
   color: rgb(255, 166, 0);
@@ -140,6 +154,7 @@ main h1 {
   #carts ul {
     grid-template-columns: 100%;
     padding: 0;
+    justify-content: space-around;
     gap: 1.5rem 0;
   }
 }
