@@ -61,6 +61,7 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  display: none;
 }
 
 .menu-btn span {
@@ -76,6 +77,11 @@ header nav a:hover {
   position: fixed;
   top: 0;
   left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
 }
 
 #side-drawer ul {
@@ -91,7 +97,12 @@ header nav a:hover {
 
 #side-drawer a {
   font-size: 1.5rem;
+  font-weight: bolds;
   color: rgb(255, 166, 0);
+}
+
+#side-drawer header {
+  justify-content: flex-end;
 }
 
 main {
@@ -170,6 +181,10 @@ main h1 {
 @media (max-width: 48rem) {
   header nav {
     display: none;
+  }
+
+  .menu-btn {
+    display: flex;
   }
 
   main h1 {
