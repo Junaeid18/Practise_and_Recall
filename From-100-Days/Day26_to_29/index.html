@@ -14,49 +14,102 @@
         <link rel="stylesheet" href="style/style.css" />
     </head>
     <body>
-        <form action="/" method="GET">
-            <label for="user">Your Name</label>
-            <input type="text" name="user-name" id="user" />
-            <label for="email">Email</label>
-            <input type="email" name="user-email" id="email" />
-            <label for="userage">Age</label>
-            <input type="number" step="1" name="age" id="userage" />
-            <label for="bday">Birthday</label>
-            <input type="date" name="user-bday" id="bday" />
-            <label for="password">Password</label>
-            <input type="password" name="user-password" id="password" />
-            <hr />
-            <label for="from">Where are you from?</label>
-            <select name="district" id="from" id="location">
-                <option value="Dhaka">Dhaka</option>
-                <option value="Rajshahi">Rajshahi</option>
-                <option value="Chattagram">Chattagram</option>
-            </select>
-            <label for="comment-msg">Tell us about yourself</label>
-            <textarea name="comment" id="comment-msg"></textarea>
-            <h2>How to Verify your account?</h2>
-            <div class="choose-radio">
-                <input type="radio" name="verify" id="text-msg" value="msg" />
-                <label for="text-msg">Via text message.</label>
-            </div>
-            <div class="choose-radio">
-                <input
-                    type="radio"
-                    name="verify"
-                    id="phone-call"
-                    value="phone"
-                />
-                <label for="phone-call">Via phone call.</label>
-            </div>
-            <div class="choose-radio">
-                <input type="radio" name="verify" id="email" value="email" />
-                <label for="email">Via an email.</label>
-            </div>
-            <div class="choose-checkbox">
-                <input type="checkbox" name="permission" id="permit" />
-                <label for="permit">I agree to the terms and conditons.</label>
-            </div>
-            <button>Submit</button>
-        </form>
+        <header>
+            <h1>Demo Form</h1>
+        </header>
+        <main>
+            <form action="/" method="GET">
+                <section>
+                    <h2>Personal Info</h2>
+                    <ul>
+                        <li>
+                            <label for="user">Your Name</label>
+                            <input type="text" name="user-name" id="user" />
+                        </li>
+                        <li>
+                            <label for="userage">Age</label>
+                            <input
+                                type="number"
+                                step="1"
+                                name="age"
+                                id="userage"
+                            />
+                        </li>
+                        <li>
+                            <label for="bday">Birthday</label>
+                            <input type="date" name="user-bday" id="bday" />
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Your Contact Info</h2>
+                    <label for="email">Email</label>
+                    <input type="email" name="user-email" id="email" />
+                </section>
+                <section>
+                    <h2>Make a Password</h2>
+                    <label for="password">Password</label>
+                    <input type="password" name="user-password" id="password" />
+                </section>
+                <hr />
+                <section>
+                    <h2>Your Area</h2>
+                    <label for="from">Where are you from?</label>
+                    <select name="district" id="from" id="location">
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Chattagram">Chattagram</option>
+                    </select>
+                </section>
+                <section>
+                    <h2>About You</h2>
+                    <label for="comment-msg">Tell us about yourself</label>
+                    <textarea name="comment" id="comment-msg"></textarea>
+                </section>
+                <section>
+                    <h2>How to Verify your account?</h2>
+                    <ul>
+                        <li class="choose-radio">
+                            <input
+                                type="radio"
+                                name="verify"
+                                id="text-msg"
+                                value="msg"
+                            />
+                            <label for="text-msg">Via text message.</label>
+                        </li>
+                        <li class="choose-radio">
+                            <input
+                                type="radio"
+                                name="verify"
+                                id="phone-call"
+                                value="phone"
+                            />
+                            <label for="phone-call">Via phone call.</label>
+                        </li>
+                        <li class="choose-radio">
+                            <input
+                                type="radio"
+                                name="verify"
+                                id="email"
+                                value="email"
+                            />
+                            <label for="email">Via an email.</label>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="choose-checkbox">
+                        <input type="checkbox" name="permission" id="permit" />
+                        <label for="permit"
+                            >I agree to the terms and conditons.</label
+                        >
+                    </div>
+                </section>
+                <section class="btn">
+                    <button>Submit</button>
+                </section>
+            </form>
+        </main>
     </body>
 </html>

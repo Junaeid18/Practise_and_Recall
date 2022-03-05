@@ -3,12 +3,20 @@ body {
     font-family: "Smooch+Sans", sans-serif;
     font-size: 2rem;
 }
+h1 {
+    color: azure;
+    text-align: center;
+}
 form {
     width: 40rem;
-    margin: 5rem auto;
+    margin: 1rem auto;
     background-color: white;
     padding: 2rem;
     border-radius: 8px;
+}
+ul {
+    list-style: none;
+    padding: 0;
 }
 label {
     font: inherits;
@@ -61,7 +69,11 @@ select:focus {
     font-size: 1rem;
     margin: 0;
 }
+.btn {
+    display: block;
+}
 button {
+    margin: auto;
     font: inherit;
     display: block;
     background-color: white;
