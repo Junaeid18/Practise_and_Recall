@@ -1,12 +1,19 @@
 body {
     background-color: rgb(49, 45, 45);
-    margin: 5rem;
+}
+form {
+    width: 40rem;
+    margin: 5rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
 }
 input {
-    width: 20rem;
+    width: 100%;
     font-size: 2rem;
     display: block;
     margin-bottom: 1.5rem;
+    box-sizing: border-box;
 }
 button {
     font-weight: 700;
