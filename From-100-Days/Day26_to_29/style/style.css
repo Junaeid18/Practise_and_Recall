@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(49, 45, 45);
+    margin: 5rem;
+}
+input {
+    width: 20rem;
+    font-size: 2rem;
+}
