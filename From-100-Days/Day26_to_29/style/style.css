@@ -16,7 +16,8 @@ label {
     margin-bottom: 0.5rem;
 }
 input,
-textarea {
+textarea,
+select {
     font: inherit;
     width: 100%;
     display: block;
@@ -28,7 +29,8 @@ textarea {
     border-radius: 5px;
 }
 input:focus,
-textarea {
+textarea:focus,
+select:focus {
     background-color: rgb(159, 137, 184);
     color: rgb(0, 0, 0);
     border-color: rgb(81, 81, 82);
