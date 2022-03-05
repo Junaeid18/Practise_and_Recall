@@ -23,6 +23,27 @@
             <input type="number" step="1" name="age" id="userage" />
             <label for="bday">Birthday</label>
             <input type="date" name="user-bday" id="bday" />
+            <label for="password">Password</label>
+            <input type="password" name="user-password" id="password" />
+            <hr />
+            <h2>How to Verify your account?</h2>
+            <div class="choose-radio">
+                <input type="radio" name="verify" id="text-msg" value="msg" />
+                <label for="text-msg">Via text message.</label>
+            </div>
+            <div class="choose-radio">
+                <input
+                    type="radio"
+                    name="verify"
+                    id="phone-call"
+                    value="phone"
+                />
+                <label for="phone-call">Via phone call.</label>
+            </div>
+            <div class="choose-radio">
+                <input type="radio" name="verify" id="email" value="email" />
+                <label for="email">Via an email.</label>
+            </div>
             <button>Submit</button>
         </form>
     </body>
