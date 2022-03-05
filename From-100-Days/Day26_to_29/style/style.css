@@ -43,6 +43,20 @@ input:focus {
 .choose-radio label {
     margin: 0;
 }
+.choose-checkbox {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+.choose-checkbox input {
+    width: auto;
+    margin: 0 0.5rem 0 0;
+}
+.choose-checkbox label {
+    font-size: 1rem;
+    margin: 0;
+}
 button {
     font: inherit;
     display: block;
