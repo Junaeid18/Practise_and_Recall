@@ -1,0 +1,40 @@
+body {
+    width: 100%;
+    background-color: rgb(193, 218, 250);
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(59, 59, 59);
+    padding: 0;
+    margin: 0;
+}
+header {
+    margin: 2rem 0;
+    text-align: center;
+}
+main {
+    font-size: 1.5rem;
+}
+form {
+    width: 60%;
+    padding: 1rem 0.8rem;
+    margin: 0 auto;
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.2);
+}
+label {
+    display: block;
+    margin: 0.25rem 0;
+}
+input {
+    font: inherit;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0.25rem;
+    background-color: inherit;
+    margin: 0.5rem 0;
+}
+input:focus {
+    background-color: rgb(166, 164, 255);
+    color: white;
+}
