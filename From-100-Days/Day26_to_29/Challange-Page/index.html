@@ -21,8 +21,100 @@
             <form action="/Challange-Page/" method="GET">
                 <h2>How can we help you?</h2>
                 <section>
-                    <label for="name">Your name</label>
-                    <input type="text" name="user-name" id="name" required />
+                    <ul>
+                        <li>
+                            <label for="name">Your name</label>
+                            <input
+                                type="text"
+                                name="user-name"
+                                id="name"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="mail">Your Email</label>
+                            <input
+                                type="email"
+                                name="user-email"
+                                id="mail"
+                                required
+                                placeholder="someone@some.com"
+                            />
+                        </li>
+                        <li>
+                            <label for="phone">Your Phone Number</label>
+                            <input
+                                type="number"
+                                name="numb"
+                                id="phone"
+                                required
+                                minlength="11"
+                                placeholder="01*********"
+                            />
+                        </li>
+                    </ul>
+                </section>
+                <section class="comment-box">
+                    <label for="msg">Your Message</label>
+                    <textarea name="comment" id="msg"></textarea>
+                </section>
+                <section>
+                    <label for="choose-ans">How did you find us?</label>
+                    <select name="ans" id="choose-ans" required>
+                        <option value="">...</option>
+                        <option value="web" required>Web Search</option>
+                        <option value="friend" required>Through Friend</option>
+                        <option value="email" required>Via Email</option>
+                    </select>
+                </section>
+                <section>
+                    <h2>How should we reply?</h2>
+                    <ul>
+                        <li class="radio-option">
+                            <input
+                                type="radio"
+                                id="call"
+                                name="rep"
+                                value="rcall"
+                                required
+                            />
+                            <label for="call">Call Me</label>
+                        </li>
+                        <li class="radio-option">
+                            <input
+                                type="radio"
+                                id="via-mail"
+                                value="rmail"
+                                name="rep"
+                                required
+                            />
+                            <label for="via-mail">Send me an email</label>
+                        </li>
+                        <li class="radio-option">
+                            <input
+                                type="radio"
+                                id="dont"
+                                name="rep"
+                                value="rnot"
+                                required
+                            />
+                            <label for="dont">Don't reply</label>
+                        </li>
+                    </ul>
+                </section>
+                <hr />
+                <section>
+                    <div class="terms-condi">
+                        <input
+                            type="checkbox"
+                            name="permit"
+                            id="terms"
+                            required
+                        />
+                        <label for="terms"
+                            >Accept our terms & conditions.</label
+                        >
+                    </div>
                 </section>
                 <section>
                     <div class="btn">

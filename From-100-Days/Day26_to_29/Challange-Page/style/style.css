@@ -16,16 +16,26 @@ main {
 form {
     width: 60%;
     padding: 1rem 0.8rem;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
     border: 2px solid rgb(59, 59, 59);
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.2);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 label {
     display: block;
     margin: 0.25rem 0;
 }
-input {
+.comment-box textarea {
+    resize: none;
+}
+input,
+.comment-box textarea,
+#choose-ans {
     font: inherit;
     box-sizing: border-box;
     display: block;
@@ -40,6 +50,34 @@ input {
 input:focus {
     background-color: rgb(166, 164, 255);
     color: white;
+}
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.radio-option input {
+    width: auto;
+    margin: 0 0.5rem 0 0;
+}
+.radio-option label {
+    width: auto;
+    margin: 0 0.5rem 0 0;
+}
+.terms-condi {
+    display: flex;
+    width: 50%;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.terms-condi input {
+    width: auto;
+    margin: 0 0.5rem 0 0;
+}
+.terms-condi label {
+    margin: 0;
 }
 .btn {
     margin: 0.25rem 0;
