@@ -72,10 +72,16 @@ select:focus {
 .btn {
     display: block;
 }
-button {
+.btn div {
+    width: 50%;
+    padding: 1rem 0;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+button {
     font: inherit;
-    display: block;
+    display: inline-block;
     background-color: white;
     color: rgb(65, 65, 65);
     border: 1px solid rgb(66, 65, 65);
