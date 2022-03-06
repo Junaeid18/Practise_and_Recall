@@ -24,7 +24,12 @@
                     <ul>
                         <li>
                             <label for="user">Your Name</label>
-                            <input type="text" name="user-name" id="user" />
+                            <input
+                                type="text"
+                                name="user-name"
+                                id="user"
+                                required
+                            />
                         </li>
                         <li>
                             <label for="userage">Age</label>
@@ -33,11 +38,20 @@
                                 step="1"
                                 name="age"
                                 id="userage"
+                                required
+                                min="20"
+                                max="80"
                             />
                         </li>
                         <li>
                             <label for="bday">Birthday</label>
-                            <input type="date" name="user-bday" id="bday" />
+                            <input
+                                type="date"
+                                name="user-bday"
+                                id="bday"
+                                required
+                                min="2002-01-01"
+                            />
                         </li>
                     </ul>
                 </section>
@@ -49,16 +63,22 @@
                 <section>
                     <h2>Make a Password</h2>
                     <label for="password">Password</label>
-                    <input type="password" name="user-password" id="password" />
+                    <input
+                        type="password"
+                        name="user-password"
+                        id="password"
+                        required
+                        minlength="6"
+                    />
                 </section>
-                <hr />
                 <section>
                     <h2>Your Area</h2>
                     <label for="from">Where are you from?</label>
-                    <select name="district" id="from" id="location">
-                        <option value="Dhaka">Dhaka</option>
-                        <option value="Rajshahi">Rajshahi</option>
-                        <option value="Chattagram">Chattagram</option>
+                    <select name="district" id="from" id="location" required>
+                        <option value="">...</option>
+                        <option value="Dhaka" required>Dhaka</option>
+                        <option value="Rajshahi" required>Rajshahi</option>
+                        <option value="Chattagram" required>Chattagram</option>
                     </select>
                 </section>
                 <section>
@@ -75,6 +95,7 @@
                                 name="verify"
                                 id="text-msg"
                                 value="msg"
+                                required
                             />
                             <label for="text-msg">Via text message.</label>
                         </li>
@@ -84,6 +105,7 @@
                                 name="verify"
                                 id="phone-call"
                                 value="phone"
+                                required
                             />
                             <label for="phone-call">Via phone call.</label>
                         </li>
@@ -93,11 +115,13 @@
                                 name="verify"
                                 id="emailchooser"
                                 value="emailverify"
+                                required
                             />
                             <label for="emailchooser">Via an email.</label>
                         </li>
                     </ul>
                 </section>
+                <hr />
                 <section>
                     <div class="choose-checkbox">
                         <input type="checkbox" name="permission" id="permit" />
