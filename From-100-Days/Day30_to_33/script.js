@@ -25,3 +25,15 @@ let info = {
     location: "Dhaka",
 };
 alert(info.name);
+
+let empName = info.name + "rocks";
+alert(empName);
+
+let age = info.age;
+let ageThen;
+
+function ageCalculatorFor2012() {
+    ageThen = age - 10;
+}
+ageCalculatorFor2012();
+alert(ageThen);
