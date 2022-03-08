@@ -8,5 +8,18 @@ alert(age);
 let msg = "script je arek page a ansi kaj hoise ni mama";
 alert(msg);
  */
+
+/* 
 let name = ["Junaeid", "Nipa", "Jubaeir"];
 alert(name[0]);
+ */
+let back = `hel
+lo`;
+alert(back);
+
+let info = {
+    name: "Junaeid",
+    age: "24",
+    location: "Dhaka",
+};
+//alert(info);
