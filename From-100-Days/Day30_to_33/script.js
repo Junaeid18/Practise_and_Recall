@@ -13,13 +13,15 @@ alert(msg);
 let name = ["Junaeid", "Nipa", "Jubaeir"];
 alert(name[0]);
  */
-let back = `hel
+
+/* let back = `hel
 lo`;
 alert(back);
+ */
 
 let info = {
     name: "Junaeid",
     age: "24",
     location: "Dhaka",
 };
-//alert(info);
+alert(info.name);
