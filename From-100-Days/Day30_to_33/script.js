@@ -45,3 +45,12 @@ let age = info.age;
 let ageThen;
 
  */
+
+let car = {
+    name: "bmw",
+    speed() {
+        alert("speed : 300 KMPH");
+    },
+};
+
+car.speed();
