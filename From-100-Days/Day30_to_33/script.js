@@ -19,6 +19,18 @@ lo`;
 alert(back);
  */
 
+/* function ageCalculatorFor2012() {
+    ageThen = age - 10;
+} */
+
+/* 
+function ageCalculatorFor2012(userAge) {
+    return userAge - 10;
+}
+let ageAdult = ageCalculatorFor2012(age);
+alert(ageAdult);
+ */
+/* 
 let info = {
     name: "Junaeid",
     age: "24",
@@ -32,8 +44,4 @@ alert(empName);
 let age = info.age;
 let ageThen;
 
-function ageCalculatorFor2012() {
-    ageThen = age - 10;
-}
-ageCalculatorFor2012();
-alert(ageThen);
+ */
