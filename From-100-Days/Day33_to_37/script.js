@@ -27,7 +27,7 @@ console.log(para);
 
 para.textContent = "Hoye gese change bro!!!!!!!!!!!";
  */
-
+//inserting html elements
 let link = document.createElement("a");
 link.href = "https://google.com";
 link.textContent = " Check me here bro !";
@@ -35,5 +35,15 @@ link.textContent = " Check me here bro !";
 let para = document.querySelector("p");
 para.append(link);
 
-let delel = document.querySelector("h1");
+//deleting html elements
+/* let delel = document.querySelector("h1");
 delel.remove();
+ */
+
+//moving html elements
+//use this :  //link.parentElement.append(delel);
+
+//or use this:
+let childele = document.querySelector("h1");
+let parentele = document.querySelector("h1").parentNode;
+parentele.insertBefore(para, childele);
