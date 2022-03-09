@@ -1,5 +1,5 @@
 /* console.log(window); */
-console.dir(document);
+//console.dir(document);
 
 //document.body.children[1].children[0].href = "http://google.com";
 
@@ -11,6 +11,8 @@ link.href = "https://google.com";
 let link = document.querySelector("a");
 link.href = "https://google.com";
  */
+
+/* 
 let header1 = document.body.children[0];
 console.log(header1);
 let parent = header1.parentNode;
@@ -24,3 +26,11 @@ let para = document.querySelector("p");
 console.log(para);
 
 para.textContent = "Hoye gese change bro!!!!!!!!!!!";
+ */
+
+let link = document.createElement("a");
+link.href = "https://google.com";
+link.textContent = " Check me here bro !";
+
+let para = document.querySelector("p");
+para.append(link);
