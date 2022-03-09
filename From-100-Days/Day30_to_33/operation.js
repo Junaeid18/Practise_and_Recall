@@ -22,3 +22,6 @@ let userName = "boSs dragon";
 console.log("Length : " + userName.length);
 console.log(userName.toUpperCase());
 console.log(userName + " beast");
+
+let ar = ["jun", "jub", "nip"];
+console.log(ar.length);
