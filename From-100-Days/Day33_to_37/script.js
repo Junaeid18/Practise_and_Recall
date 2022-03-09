@@ -34,3 +34,6 @@ link.textContent = " Check me here bro !";
 
 let para = document.querySelector("p");
 para.append(link);
+
+let delel = document.querySelector("h1");
+delel.remove();
