@@ -10,8 +10,8 @@ alert(msg);
  */
 
 /* 
-let name = ["Junaeid", "Nipa", "Jubaeir"];
-alert(name[0]);
+let names = ["Junaeid", "Nipa", "Jubaeir"];
+alert(names[0]);
  */
 
 /* let back = `hel
@@ -49,7 +49,8 @@ let ageThen;
 let car = {
     name: "bmw",
     speed() {
-        alert("speed : 300 KMPH");
+        /* alert("speed : 300 KMPH"); */
+        console.log("speed : 300 KMPH");
     },
 };
 
