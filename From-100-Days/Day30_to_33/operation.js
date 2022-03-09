@@ -17,3 +17,8 @@ ans /= 5;
 console.log(ans);
 ans *= 5;
 console.log(ans);
+
+let userName = "boSs dragon";
+console.log("Length : " + userName.length);
+console.log(userName.toUpperCase());
+console.log(userName + " beast");
