@@ -2,6 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap"
+            rel="stylesheet"
+        />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Demo Project</title>
@@ -11,12 +17,9 @@
         <main>
             <form action="/" method="GET">
                 <label>Product Name</label>
-                <div>
-                    <input type="text" name="input-box" />
-                    <p>
-                        <span>60</span>/
-                        <span>60</span>
-                    </p>
+                <div id="inp_data">
+                    <input type="text" name="input-box" maxlength="60" />
+                    <p><span id="targetNumber">60</span>/<span>60</span></p>
                 </div>
                 <button>Submit</button>
             </form>
