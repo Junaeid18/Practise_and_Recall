@@ -43,3 +43,6 @@ button {
     border-radius: 4px;
     border: none;
 }
+.warning {
+    color: red;
+}
