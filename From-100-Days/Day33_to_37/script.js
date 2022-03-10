@@ -44,6 +44,13 @@ delel.remove();
 //use this :  //link.parentElement.append(delel);
 
 //or use this:
+/* 
 let childele = document.querySelector("h1");
 let parentele = document.querySelector("h1").parentNode;
 parentele.insertBefore(para, childele);
+ */
+console.log(para.innerHTML);
+//para.textContent = "ok this is <strong> it </strong>";
+para.innerHTML = "ok this is <strong> it </strong>";
+//para.append.innerHTML = "ok this is <strong> it </strong>";
+console.log(para.innerHTML);
