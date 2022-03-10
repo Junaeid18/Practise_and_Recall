@@ -6,3 +6,12 @@ function makeTheChange() {
 }
 
 header1.addEventListener("click", makeTheChange);
+
+let userInput = document.querySelector("input");
+
+function retrieveUserInput() {
+    let userInputTillNow = userInput.value;
+    console.log(userInputTillNow);
+}
+
+userInput.addEventListener("input", retrieveUserInput);
