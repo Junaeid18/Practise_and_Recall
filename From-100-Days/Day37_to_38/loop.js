@@ -13,3 +13,9 @@ const human = { name: "Junaeid", gender: "male", age: 20 };
 for (const property in human) {
     console.log(human[property]);
 }
+
+let value = false;
+while (!value) {
+    value = confirm("Do it bro ASAP.");
+}
+console.log("Bro had done that");
