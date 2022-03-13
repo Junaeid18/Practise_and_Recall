@@ -2,3 +2,9 @@ body {
     background-color: aquamarine;
     font-size: 3rem;
 }
+.prop {
+    color: white;
+}
+.prop2 {
+    color: red;
+}
