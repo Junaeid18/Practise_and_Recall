@@ -8,6 +8,8 @@ function changeTarget(event) {
     item.innerHTML = num;
     if (num < 11) {
         item.classList.add("warning");
+    } else {
+        item.classList.remove("warning");
     }
     //console.log(stringLength);
 }
