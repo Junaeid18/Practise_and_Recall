@@ -6,3 +6,13 @@ if (val === 10) {
     var2.classList.add("prop2");
     var1.remove();
 }
+
+let isLoggedIn = false;
+if (!isLoggedIn) {
+    console.log("User is not logged in");
+}
+
+let names = "";
+if (names) {
+    console.log("nothing");
+}
