@@ -1,3 +1,5 @@
+//task-1
+
 const sumTheSeries = document.getElementById("seriesSum");
 function doTheSeriesSum() {
     const input = document.getElementById("user-number");
@@ -13,3 +15,16 @@ function doTheSeriesSum() {
     res.style.display = "block";
 }
 sumTheSeries.addEventListener("click", doTheSeriesSum);
+
+//task-2
+
+const btn = document.querySelector("#highlight-links button");
+//console.dir(btn);
+function highlightLinks() {
+    const anchor = document.querySelectorAll("#highlight-links a");
+    //console.dir(anchor);
+    for (const anchorElements of anchor) {
+        anchorElements.classList.add("highlight");
+    }
+}
+btn.addEventListener("click", highlightLinks);
