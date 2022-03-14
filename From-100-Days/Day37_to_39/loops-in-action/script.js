@@ -28,3 +28,20 @@ function highlightLinks() {
     }
 }
 btn.addEventListener("click", highlightLinks);
+
+//task-3
+
+const btn2 = document.querySelector("#user-data button");
+const info = { name: "Junaeid", age: 20, gender: "male" };
+function displayUserData() {
+    const output = document.getElementById("output-user-data");
+    output.innerHTML = "";
+    for (const data in info) {
+        const newElement = document.createElement("li");
+        const outputText = data.toUpperCase() + ":" + info[data];
+        newElement.textContent = outputText;
+        output.append(newElement);
+    }
+}
+
+btn2.addEventListener("click", displayUserData);
