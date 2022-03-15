@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    font-family: "Source+Sans+Pro", sans-serif;
+    color: rgb(61, 61, 61);
+    background-color: azure;
+}
+
+#mainHeader {
+    background-color: rgb(69, 69, 230);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
