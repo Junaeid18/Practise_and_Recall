@@ -18,6 +18,8 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+}
+.backDrop {
     display: none;
 }
 
@@ -26,4 +28,12 @@
         width: 40rem;
         left: calc(50% - 20rem);
     }
+}
+
+.disabled {
+    display: none;
+}
+
+.enabled {
+    display: block;
 }
