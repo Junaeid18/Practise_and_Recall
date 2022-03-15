@@ -13,3 +13,9 @@ function closeOverlays() {
     configOverlayElement.style.display = "none";
     backDropElement.style.display = "none";
 }
+
+function savePlayerConfig(event) {
+    event.preventDefault();
+    const formdata = FormData(event.target);
+    const data = formdata.get("playername");
+}
