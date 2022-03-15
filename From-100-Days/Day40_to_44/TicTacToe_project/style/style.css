@@ -11,3 +11,27 @@ body {
     padding: 2rem 5%;
     text-align: center;
 }
+
+.btn {
+    font: inherit;
+    background-color: rgb(104, 104, 167);
+    color: white;
+    border: 1px solid rgb(114, 81, 190);
+    border-radius: 5px;
+}
+
+.btn_alt {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(104, 104, 167);
+}
+
+.btn:hover {
+    background-color: rgb(120, 120, 163);
+    border-color: rgb(136, 112, 190);
+}
+
+.btn_alt:hover {
+    background-color: rgb(211, 208, 233);
+    border-color: transparent;
+}
