@@ -9,3 +9,6 @@ const editbtn2 = document.getElementById("edit_player2");
 
 editbtn1.addEventListener("click", editPlayer);
 editbtn2.addEventListener("click", editPlayer);
+
+backDropElement.addEventListener("click", closeOverlays);
+overlayCancelBtn.addEventListener("click", closeOverlays);

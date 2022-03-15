@@ -30,10 +30,10 @@
     }
 }
 
-.disabled {
-    display: none;
-}
-
 .enabled {
     display: block;
+}
+
+.disabled {
+    display: none;
 }
