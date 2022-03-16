@@ -16,6 +16,7 @@ function closeOverlays() {
 
 function savePlayerConfig(event) {
     event.preventDefault();
-    const formdata = FormData(event.target);
-    const data = formdata.get("playername");
+    const formdata = new FormData(event.target);
+    const enteredPlayerName = formdata.get("playername");
+    console.log(enteredPlayerName);
 }
