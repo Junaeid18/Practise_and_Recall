@@ -1,5 +1,6 @@
 const configOverlayElement = document.getElementById("config-overlay");
 const backDropElement = document.getElementById("backdrop");
+const errormsg = document.getElementById("errMsg");
 
 const overlayCancelBtn = document.getElementById("cancel_btn");
 const overlayConfirmBtn = document.getElementById("confirm_btn");

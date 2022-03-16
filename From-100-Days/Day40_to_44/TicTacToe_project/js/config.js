@@ -12,11 +12,24 @@ function editPlayer() {
 function closeOverlays() {
     configOverlayElement.style.display = "none";
     backDropElement.style.display = "none";
+    formInput.firstElementChild.classList.remove("error");
+    errormsg.textContent = "";
 }
 
 function savePlayerConfig(event) {
     event.preventDefault();
     const formdata = new FormData(event.target);
-    const enteredPlayerName = formdata.get("playername");
+    const enteredPlayerName = formdata.get("playername").trim();
     console.log(enteredPlayerName);
+    if (!enteredPlayerName) {
+        event.target.firstElementChild.classList.add("error");
+        errormsg.textContent = "Please enter a valid name";
+        return;
+    } else {
+        formInput.firstElementChild.classList.remove("error");
+        errormsg.textContent = "";
+        configOverlayElement.style.display = "none";
+        backDropElement.style.display = "none";
+        formInput.firstElementChild.childNodes[1].textContent = "";
+    }
 }
