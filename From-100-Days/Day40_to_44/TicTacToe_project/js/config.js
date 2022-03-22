@@ -18,8 +18,8 @@ function closeOverlays() {
 
 function savePlayerConfig(event) {
     event.preventDefault();
-    const formdata = new FormData(event.target);
-    const enteredPlayerName = formdata.get("playername").trim();
+    let formdata = new FormData(event.target);
+    let enteredPlayerName = formdata.get("pname").trim();
     console.log(enteredPlayerName);
     if (!enteredPlayerName) {
         event.target.firstElementChild.classList.add("error");
@@ -30,6 +30,6 @@ function savePlayerConfig(event) {
         errormsg.textContent = "";
         configOverlayElement.style.display = "none";
         backDropElement.style.display = "none";
-        formInput.firstElementChild.childNodes[1].textContent = "";
+        formInput.firstElementChild.children[1].value = "";
     }
 }
