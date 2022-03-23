@@ -35,11 +35,16 @@ function selectedListArea(event) {
     event.target.classList.add("disabled_board");
 
     gameData[sbRow][sbCol] = activePlayer + 1;
-    //console.log(gameData);
+    console.log(gameData);
+    const winnerId = gameIsOver();
+    console.log(winnerId);
+
+    currentRound++;
     switchPlayer();
 }
 
 function gameIsOver() {
+    //for Row check
     for (let i = 0; i < 3; ++i) {
         if (
             gameData[i][0] > 0 &&
@@ -48,12 +53,31 @@ function gameIsOver() {
             return gameData[i][0];
         }
     }
+    //for column check
     for (let i = 0; i < 3; ++i) {
         if (
             gameData[0][i] > 0 &&
-            (gameData[0][1] === gameData[0][i]) === gameData[0][i]
+            (gameData[0][i] === gameData[0][i]) === gameData[0][i]
         ) {
             return gameData[0][i];
         }
     }
+    //Left to Right Diagonal Check
+    if (
+        gameData[0][0] > 0 &&
+        (gameData[0][0] === gameData[1][1]) === gameData[2][2]
+    ) {
+        return gameData[0][0];
+    }
+    //Right to left Diagonal Check
+    if (
+        gameData[0][2] > 0 &&
+        (gameData[0][2] === gameData[1][1]) === gameData[2][0]
+    ) {
+        return gameData[2][0];
+    }
+    if (currentRound === 9) {
+        return -1;
+    }
+    return 0;
 }
