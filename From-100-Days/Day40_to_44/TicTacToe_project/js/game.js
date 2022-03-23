@@ -57,7 +57,7 @@ function selectedListArea(event) {
     gameData[sbRow][sbCol] = activePlayer + 1;
     //console.log(gameData);
     const winnerId = gameIsOver();
-    //console.log(winnerId);
+    console.log(winnerId);
 
     if (winnerId >= 0) {
         endGame(winnerId);
@@ -96,7 +96,7 @@ function gameIsOver() {
         gameData[0][0] === gameData[1][1] &&
         gameData[1][1] === gameData[2][2]
     ) {
-        console.log("yes from Left Diagonal");
+        //console.log("yes from Left Diagonal");
         return gameData[0][0];
     }
     //Right to left Diagonal Check
@@ -105,7 +105,7 @@ function gameIsOver() {
         gameData[0][2] === gameData[1][1] &&
         gameData[1][1] === gameData[2][0]
     ) {
-        console.log("yes from Right Diagonal");
+        //console.log("yes from Right Diagonal");
         return gameData[2][0];
     }
     if (currentRound === 9) {
@@ -115,11 +115,15 @@ function gameIsOver() {
 }
 
 function endGame(winnerId) {
+    gameOverStatus = true;
+    gameOver.style.display = "block";
     if (winnerId >= 0) {
-        gameOverStatus = true;
-        gameOver.style.display = "block";
-        winnerName.textContent = gameData[winnerId].name;
-        /* gameArea.classList.add("disabled_board");
-        currentRound = 1; */
+        const name = info[winnerId - 1].name;
+        //gameOver.firstElementChild.firstElementChild.textContent = name;
+        console.dir(gameOver.firstElementChild.firstElementChild);
+        console.dir(winnerName);
+        winnerName.textContent = name;
+    } else {
+        gameOver.firstElementChild.textContent = "It's a Draw.";
     }
 }
