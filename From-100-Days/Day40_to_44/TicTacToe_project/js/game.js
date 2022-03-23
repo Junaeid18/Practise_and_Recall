@@ -38,6 +38,12 @@ function selectedListArea(event) {
     console.log(gameData);
     const winnerId = gameIsOver();
     console.log(winnerId);
+    if (winnerId >= 0) {
+        gameOver.style.display = "block";
+        winnerName.textContent = gameData[winnerId];
+        gameArea.classList.add("disabled_board");
+        currentRound = 1;
+    }
 
     currentRound++;
     switchPlayer();
@@ -77,7 +83,7 @@ function gameIsOver() {
         return gameData[2][0];
     }
     if (currentRound === 9) {
-        return -1;
+        return -5;
     }
-    return 0;
+    return -1;
 }
