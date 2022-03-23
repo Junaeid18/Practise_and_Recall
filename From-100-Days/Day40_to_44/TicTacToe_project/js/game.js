@@ -5,6 +5,16 @@ function gameReset() {
     gameOver.firstElementChild.innerHTML =
         'You won, <span id="winner_name">Player Name</span>!';
     gameOver.style.display = "none";
+    let index = 0;
+    for (let i = 0; i < 3; ++i) {
+        for (let j = 0; j < 3; ++j) {
+            gameData[i][j] = 0;
+            const gbc = gameArea.children[index];
+            gbc.textContent = "";
+            gbc.classList.remove("disabled_board");
+            index++;
+        }
+    }
 }
 
 function ShowGameSection() {
@@ -12,6 +22,7 @@ function ShowGameSection() {
         alert("Please add player name !");
         return;
     }
+    gameReset();
     activePlayerName.textContent = info[activePlayer].name;
     gameSection.style.display = "block";
 }
