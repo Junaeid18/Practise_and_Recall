@@ -20,7 +20,21 @@ function selectedListArea(event) {
     if (event.target.tagName !== "LI") {
         return;
     }
+    const selectedBox = event.target;
+    //console.dir(selectedBox);
+    const sbRow = selectedBox.dataset.row - 1;
+    const sbCol = selectedBox.dataset.col - 1;
+    //console.log(sbRow + "  " + sbCol);
+
+    if (gameData[sbRow][sbCol] > 0) {
+        alert("Please choose an empty field.");
+        return;
+    }
+
     event.target.textContent = info[activePlayer].symbol;
     event.target.classList.add("disabled_board");
+
+    gameData[sbRow][sbCol] = activePlayer + 1;
+    //console.log(gameData);
     switchPlayer();
 }
