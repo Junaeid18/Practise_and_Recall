@@ -1,5 +1,6 @@
 let playerid = 0;
 let activePlayer = 0;
+let currentRound = 0;
 const gameData = [
     [0, 0, 0],
     [0, 0, 0],
