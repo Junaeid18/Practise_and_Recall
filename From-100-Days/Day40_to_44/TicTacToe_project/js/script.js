@@ -1,3 +1,16 @@
+let playerid = 0;
+
+const info = [
+    {
+        name: "",
+        symbol: "X",
+    },
+    {
+        name: "",
+        symbol: "O",
+    },
+];
+
 const configOverlayElement = document.getElementById("config-overlay");
 const backDropElement = document.getElementById("backdrop");
 const errormsg = document.getElementById("errMsg");

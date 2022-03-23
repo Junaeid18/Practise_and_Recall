@@ -14,6 +14,7 @@ function closeOverlays() {
     backDropElement.style.display = "none";
     formInput.firstElementChild.classList.remove("error");
     errormsg.textContent = "";
+    formInput.firstElementChild.children[1].value = "";
 }
 
 function savePlayerConfig(event) {
@@ -25,11 +26,12 @@ function savePlayerConfig(event) {
         event.target.firstElementChild.classList.add("error");
         errormsg.textContent = "Please enter a valid name";
         return;
-    } else {
+    } /* else {
         formInput.firstElementChild.classList.remove("error");
         errormsg.textContent = "";
         configOverlayElement.style.display = "none";
         backDropElement.style.display = "none";
         formInput.firstElementChild.children[1].value = "";
-    }
+    } */
+    closeOverlays();
 }
