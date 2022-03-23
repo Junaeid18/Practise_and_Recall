@@ -21,5 +21,6 @@ function selectedListArea(event) {
         return;
     }
     event.target.textContent = info[activePlayer].symbol;
+    event.target.classList.add("disabled_board");
     switchPlayer();
 }
