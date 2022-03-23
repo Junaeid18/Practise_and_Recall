@@ -1,5 +1,5 @@
 let playerid = 0;
-
+let activePlayer = 0;
 const info = [
     {
         name: "",
@@ -15,6 +15,8 @@ const configOverlayElement = document.getElementById("config-overlay");
 const backDropElement = document.getElementById("backdrop");
 const errormsg = document.getElementById("errMsg");
 const gameSection = document.getElementById("game");
+const gameArea = document.getElementById("game_board");
+const activePlayerName = document.getElementById("activePlayerName");
 
 const overlayCancelBtn = document.getElementById("cancel_btn");
 const overlayConfirmBtn = document.getElementById("confirm_btn");
@@ -31,3 +33,4 @@ backDropElement.addEventListener("click", closeOverlays);
 overlayCancelBtn.addEventListener("click", closeOverlays);
 formInput.addEventListener("submit", savePlayerConfig);
 startGame.addEventListener("click", ShowGameSection);
+gameArea.addEventListener("click", selectedListArea);
