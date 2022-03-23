@@ -40,6 +40,7 @@ function savePlayerConfig(event) {
         "player-" + playerid + "-info"
     );
     playerchoosed.children[1].textContent = enteredPlayerName;
+    info[playerid - 1].name = enteredPlayerName;
 
     closeOverlays();
 }
