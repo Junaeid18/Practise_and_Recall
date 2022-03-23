@@ -123,6 +123,7 @@ function endGame(winnerId) {
         gameOver.firstElementChild.firstElementChild.textContent = name;
         //console.log(name);
         //winnerName.textContent = name;
+        //still don't know why this wasn't working
     } else {
         gameOver.firstElementChild.textContent = "It's a Draw.";
     }
