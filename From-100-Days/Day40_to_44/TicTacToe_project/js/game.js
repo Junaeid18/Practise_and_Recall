@@ -1,9 +1,9 @@
 function gameReset() {
-    let activePlayer = 0;
-    let currentRound = 1;
-    let gameOverStatus = false;
+    activePlayer = 0;
+    currentRound = 1;
+    gameOverStatus = false;
     gameOver.firstElementChild.innerHTML =
-        'You won, <span id="winner_name">Player Name</span>!';
+        'You won, <span id="nameOfWinner">Player Name</span>!';
     gameOver.style.display = "none";
     let index = 0;
     for (let i = 0; i < 3; ++i) {
@@ -23,6 +23,7 @@ function ShowGameSection() {
         return;
     }
     gameReset();
+    console.log(activePlayer);
     activePlayerName.textContent = info[activePlayer].name;
     gameSection.style.display = "block";
 }
@@ -59,7 +60,7 @@ function selectedListArea(event) {
     const winnerId = gameIsOver();
     console.log(winnerId);
 
-    if (winnerId >= 0) {
+    if (winnerId !== 0) {
         endGame(winnerId);
     }
 
@@ -75,7 +76,7 @@ function gameIsOver() {
             gameData[i][0] === gameData[i][1] &&
             gameData[i][1] === gameData[i][2]
         ) {
-            console.log("yes from row");
+            //console.log("yes from row");
             return gameData[i][0];
         }
     }
@@ -86,7 +87,7 @@ function gameIsOver() {
             gameData[0][i] === gameData[1][i] &&
             gameData[1][i] === gameData[2][i]
         ) {
-            console.log("yes from column");
+            //console.log("yes from column");
             return gameData[0][i];
         }
     }
@@ -109,20 +110,19 @@ function gameIsOver() {
         return gameData[2][0];
     }
     if (currentRound === 9) {
-        return -5;
+        return -1;
     }
-    return -1;
+    return 0;
 }
 
 function endGame(winnerId) {
     gameOverStatus = true;
     gameOver.style.display = "block";
-    if (winnerId >= 0) {
+    if (winnerId > 0) {
         const name = info[winnerId - 1].name;
-        //gameOver.firstElementChild.firstElementChild.textContent = name;
-        console.dir(gameOver.firstElementChild.firstElementChild);
-        console.dir(winnerName);
-        winnerName.textContent = name;
+        gameOver.firstElementChild.firstElementChild.textContent = name;
+        //console.log(name);
+        //winnerName.textContent = name;
     } else {
         gameOver.firstElementChild.textContent = "It's a Draw.";
     }

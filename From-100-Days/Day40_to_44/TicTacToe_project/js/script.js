@@ -26,12 +26,12 @@ const gameSection = document.getElementById("game");
 const gameArea = document.getElementById("game_board");
 const activePlayerName = document.getElementById("activePlayerName");
 const gameOver = document.getElementById("game_over");
+const winnerName = document.getElementById("nameOfWinner");
 
 const overlayCancelBtn = document.getElementById("cancel_btn");
 const overlayConfirmBtn = document.getElementById("confirm_btn");
 const formInput = document.querySelector("form");
 const startGame = document.getElementById("start_game");
-const winnerName = document.getElementById("nameOfWinner");
 
 const editbtn1 = document.getElementById("edit_player1");
 const editbtn2 = document.getElementById("edit_player2");
