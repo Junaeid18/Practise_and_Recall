@@ -8,11 +8,12 @@ body {
 }
 
 #imgFix {
-    padding: 1rem 0;
+    padding: 1rem;
     height: 30rem;
     width: 100%;
     max-width: 60rem;
     margin: 1rem auto;
+    border: 5px solid rgba(59, 59, 59, 0.5);
 }
 
 #imgFix img {
@@ -21,6 +22,7 @@ body {
     height: 30rem;
     max-width: 50rem;
     object-fit: cover;
+    border: 5px solid rgba(255, 0, 0, 0.5);
 }
 
 #text {
