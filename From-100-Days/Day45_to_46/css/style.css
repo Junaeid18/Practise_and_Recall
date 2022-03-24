@@ -6,10 +6,18 @@
     height: 30rem;
     width: 100%;
     max-width: 50rem;
-    margin: 2rem auto;
+    margin: 5rem auto;
 }
 
 #carouselByJun img {
     height: 30rem;
     object-fit: cover;
+}
+
+#emailForm {
+    height: 20rem;
+    width: 90%;
+    max-width: 50rem;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
 }
