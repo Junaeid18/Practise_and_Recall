@@ -1,0 +1,22 @@
+{
+  "name": "day48_to_49",
+  "version": "1.0.0",
+  "description": "Starting with Node JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junaeid18/Practise_and_Recall.git"
+  },
+  "author": "Md Junaeid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Junaeid18/Practise_and_Recall/issues"
+  },
+  "homepage": "https://github.com/Junaeid18/Practise_and_Recall#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
