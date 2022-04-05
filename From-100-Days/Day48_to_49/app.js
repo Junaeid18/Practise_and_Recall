@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const exp = require("express");
-const { json } = require("express/lib/response");
+const { json, links } = require("express/lib/response");
 const app = exp();
 
 app.use(exp.urlencoded({ extended: false }));
@@ -31,6 +31,20 @@ app.post("/user", function (req, res) {
 
     res.send("<h1>" + userName + "</h1>");
     console.log(userName);
+});
+
+app.get("/allUser", function (req, res) {
+    const dataPath = path.join(__dirname, "data", "userData.json");
+    const allUser = fs.readFileSync(dataPath);
+
+    const users = JSON.parse(allUser);
+
+    let adduser = "<ul style='text-align:center; list-style:none;'>";
+    for (const i of users) {
+        adduser += "<li>" + i + "</li>";
+    }
+    adduser += "</ul>";
+    res.send("<h1>" + adduser + "</h1>");
 });
 
 app.listen(3000);
